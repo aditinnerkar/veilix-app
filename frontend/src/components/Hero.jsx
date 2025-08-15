@@ -53,8 +53,8 @@ export default function Hero() {
         
         {/* CTA Button */}
         <div className="pt-4">
-          <button className="bg-white text-black px-6 py-2 rounded-full text-lg font-medium hover:bg-gray-100 transition-colors">
-            Contact
+          <button className="bg-white text-black px-6 py-2 rounded-full text-lg font-medium hover:bg-gray-100 transition-colors" onClick={() => window.location.href = 'mailto:parvez.rumi@veilix.ai'}>
+            Get Started
           </button>
         </div>
       </div>
