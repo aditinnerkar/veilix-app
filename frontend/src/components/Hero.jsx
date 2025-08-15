@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Backdrop from "./backdrop";
 
 export default function Hero() {
@@ -10,7 +11,7 @@ export default function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-4 py-2 backdrop-blur-sm">
           <span className="text-white/60 text-sm leading-none">•</span>
-          <span className="text-[13px] leading-none text-white/70">
+          <span className="text-[16px] leading-none text-white/70">
             Sneak peek of solution we are building
           </span>
           <span className="text-white/60 text-sm leading-none">•</span>
@@ -18,7 +19,7 @@ export default function Hero() {
             href="https://www.linkedin.com/company/veilix-ai/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-[13px] leading-none text-white/90 hover:text-white underline underline-offset-4 decoration-white/40"
+            className="inline-flex items-center gap-1 text-[14px] leading-none text-white/90 hover:text-white underline underline-offset-4 decoration-white/40"
             aria-label="Learn more (opens in a new tab)"
           >
             Learn More
@@ -35,28 +36,47 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Main heading */}
-        <div className="space-y-4">
-          <h1 className="text-4xl md:text-4xl font-bold leading-tight">
-            Empowering Engineering with our 
-            GenAI-Driven Precision Applications
-          </h1>
-        </div>
 
-        {/* Description */}
-        <div className="space-y-6">
-          <p className="text-xl text-white/70 max-w-3xl mx-auto">
-            Revolutionizing technical planning with intelligent AI solutions, 
-            enabling efficiency, innovation, and compliance across industries.        
-          </p>
+        {/* Spotlighted Heading + Description */}
+        <div className="relative w-full flex flex-col items-center">
+          {/* Animated Spotlight */}
+          <motion.div
+            className="fixed left-0 top-1/2 -translate-y-1/2 pointer-events-none z-30 rounded-full"
+            initial={{ x: '-280px', opacity: 0 }}
+            animate={{ x: ['-260px', '120vw'], opacity: [0, 1, 1, 0] }}
+            transition={{ repeat: Infinity, duration: 4.8, ease: [0.4, 0, 0.2, 1], times: [0, 0.12, 0.88, 1] }}
+            style={{
+              width: 350,
+              height: 350,
+              background: 'radial-gradient(circle at center, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.10) 45%, transparent 100%)',
+              mixBlendMode: 'lighten',
+              filter: 'blur(14px)',
+              willChange: 'transform, opacity'
+            }}
+          />
+
+          {/* Heading + Description */}
+          <div className="flex flex-col items-center gap-8 relative z-20">
+            <h1 className="text-[40px] text-[rgb{#E7E7E7}] font-semibold leading-tight">
+              Empowering Engineering with our <br />
+              GenAI-Driven <br />
+              Precision Applications
+            </h1>
+
+            <p className="text-xl text-white/70 max-w-3xl mx-auto">
+              Revolutionizing technical planning with intelligent AI solutions, 
+              enabling efficiency, innovation, and compliance across industries.        
+            </p>
+
+            {/* CTA */}
+            <div>
+              <button className="bg-white text-black px-6 py-2 rounded-full text-lg font-medium hover:bg-gray-100 transition-colors" onClick={() => window.location.href = 'mailto:parvez.rumi@veilix.ai'}>
+                Get Started
+              </button>
+            </div>
+          </div>
         </div>
         
-        {/* CTA Button */}
-        <div className="pt-4">
-          <button className="bg-white text-black px-6 py-2 rounded-full text-lg font-medium hover:bg-gray-100 transition-colors" onClick={() => window.location.href = 'mailto:parvez.rumi@veilix.ai'}>
-            Get Started
-          </button>
-        </div>
       </div>
 
       {/* Bottom-center hovering arrow */}
