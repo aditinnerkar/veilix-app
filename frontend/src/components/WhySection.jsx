@@ -2,6 +2,7 @@ import Revenue from "../assets/icons/Revenue.svg";
 import Time from "../assets/icons/Time.svg";
 import Cost from "../assets/icons/Cost.svg";
 import Workflow from "../assets/icons/Workflow.svg";
+import Star from '../assets/icons/Star.svg';
 
 const ITEMS = [
   {
@@ -36,11 +37,11 @@ export default function Why() {
         {/* Pill */}
         <div className="flex justify-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-3.5 py-1.5 backdrop-blur-sm">
-            <span className="text-white/50 text-xs">＋</span>
+            <img src={Star} alt="star" className="h-3 w-3 opacity-60" />
             <span className="text-[12.5px] leading-none text-white/70">
               Why Veilix?
             </span>
-            <span className="text-white/50 text-xs">＋</span>
+            <img src={Star} alt="star" className="h-3 w-3 opacity-60" />
           </div>
         </div>
 
