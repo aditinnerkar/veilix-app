@@ -33,7 +33,7 @@ export default function Navbar() {
           <img src={veilixlogo} alt="Veilix" className="h-8 w-auto" />
         </a>
 
-        {/* Center: Nav links (perfectly centered, independent of left/right widths) */}
+        {/* Center: Nav links */}
         <nav
           aria-label="Primary"
           className="absolute left-1/2 -translate-x-1/2 flex items-center gap-6"

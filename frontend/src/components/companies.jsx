@@ -1,3 +1,4 @@
+// placeholder for partners
 export default function Company() {
     return (
       <div className="bg-gray-900 py-24 sm:py-32">

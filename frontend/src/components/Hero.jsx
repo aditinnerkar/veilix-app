@@ -59,10 +59,10 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Bottom-center hovering arrow (simple) */}
+      {/* Bottom-center hovering arrow */}
         <div className="fixed bottom-6 inset-x-0 z-40 flex justify-center">
         <a
-            href="#why" /* change target */
+            href="#why" /* can change target */
             aria-label="Scroll to next section"
             className="text-white/80 hover:text-white"
         >
