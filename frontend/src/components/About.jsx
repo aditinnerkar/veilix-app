@@ -12,7 +12,7 @@ export default function About() {
           {/* Pill */}
           <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-3.5 py-1.5 backdrop-blur-sm">
             <img src={Star} alt="star" className="h-3 w-3 opacity-60" />
-            <span className="text-[12.5px] leading-none text-white/75">About Us</span>
+            <span className="text-[16px] leading-none text-white/75">About Us</span>
             <img src={Star} alt="star" className="h-3 w-3 opacity-60" />
           </div>
 
@@ -23,18 +23,18 @@ export default function About() {
           </h2>
 
           {/* Paragraphs */}
-          <p className="mt-5 text-white/75 max-w-[56ch]">
+          <p className="mt-5 text-white/75 max-w-[56ch] text-lg">
             Veilix is a forward-thinking startup combining the power of Generative AI with
             advanced analytics to deliver transformative solutions for engineering and
             technical domains.
           </p>
 
-          <p className="mt-4 text-white/75 max-w-[56ch]">
+          <p className="mt-4 text-white/75 max-w-[56ch] text-lg">
             Our mission is to bridge the gap between traditional technical diagrams and
             actionable insights, driving efficiency and innovation.
           </p>
 
-            <p className="mt-4 text-white/75 max-w-[56ch]">
+            <p className="mt-4 text-white/75 max-w-[56ch] text-lg">
               Tailor-made industry-specific AI solutions<br />
               Expertise in P&amp;ID digitization and intelligent analytics<br />
               Scalable user-friendly platforms for modern engineering
@@ -53,7 +53,7 @@ export default function About() {
                   key={label}
                   type="button"
                   className="
-                    rounded-xl bg-[#D1D1D1] text-black px-2 py-2 text-[25px] font-large
+                    rounded-xl bg-[#D1D1D1] text-black px-2 py-2 text-[26px] font-large
                     shadow-[inset_0_1px_0_rgba(255,255,255,0.6)]
                     transition-transform duration-200 transform-gpu hover:-translate-y-[2px]
                     border border-black/10

@@ -9,8 +9,8 @@ export default function Footer() {
         <div className="grid grid-cols-12 gap-10">
           {/* Navigation */}
           <div className="col-span-4">
-            <h4 className="text-sm font-semibold mb-4">Navigation</h4>
-            <ul className="space-y-2 text-sm">
+            <h4 className="text-lg font-semibold mb-4">Navigation</h4>
+            <ul className="space-y-2 text-base">
               <li><a href="#why" className="text-white/70 hover:text-white">Why</a></li>
               <li><a href="#about" className="text-white/70 hover:text-white">About</a></li>
               <li><a href="#services" className="text-white/70 hover:text-white">Services</a></li>
@@ -20,8 +20,8 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="col-span-5">
-            <h4 className="text-sm font-semibold mb-4">Contact</h4>
-            <div className="text-sm">
+            <h4 className="text-lg font-semibold mb-4">Contact</h4>
+            <div className="text-base">
               <div className="mb-3">
                 <div className="text-white/50">Mail</div>
                 <a
@@ -44,8 +44,8 @@ export default function Footer() {
 
           {/* Socials */}
           <div className="col-span-3">
-            <h4 className="text-sm font-semibold mb-4">Socials</h4>
-            <ul className="space-y-2 text-sm">
+            <h4 className="text-lg font-semibold mb-4">Socials</h4>
+            <ul className="space-y-2 text-base">
               <li>
                 <a
                   href="https://www.linkedin.com/company/veilix-ai/"
@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
 
         {/* bottom note */}
-        <div className="mt-10 text-xs text-white/50">
+        <div className="mt-10 text-sm italic text-white/50">
           © {year} Veilix AI. All rights reserved.
         </div>
       </div>

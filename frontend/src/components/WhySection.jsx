@@ -38,7 +38,7 @@ export default function Why() {
         <div className="flex justify-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-3.5 py-1.5 backdrop-blur-sm">
             <img src={Star} alt="star" className="h-3 w-3 opacity-60" />
-            <span className="text-[12.5px] leading-none text-white/70">
+            <span className="text-[16px] leading-none text-white/70">
               Why Veilix?
             </span>
             <img src={Star} alt="star" className="h-3 w-3 opacity-60" />
@@ -46,8 +46,8 @@ export default function Why() {
         </div>
 
         {/* Heading */}
-        <h2 className="text-center text-[28px] leading-tight font-semibold tracking-[-0.01em] mt-4">
-          Unlock the Future of Engineering:
+        <h2 className="text-center text-[34px] leading-tight font-semibold tracking-[-0.01em] mt-4">
+          Unlock the Future of Engineering
           <span className="block">
             Efficiency, Growth and Seamless Collaboration
           </span>
@@ -88,8 +88,8 @@ export default function Why() {
               </div>
 
               {/* Title + body resized for balance */}
-              <h3 className="text-[22px] font-semibold leading-snug">{item.title}</h3>
-              <p className="mt-2.5 text-[15px] leading-relaxed text-white/60 max-w-[300px]">
+              <h3 className="text-[26px] font-semibold leading-snug">{item.title}</h3>
+              <p className="mt-2.5 text-[16px] leading-relaxed text-white/60 max-w-[300px]">
                 {item.body}
               </p>
             </div>

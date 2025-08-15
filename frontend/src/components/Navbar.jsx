@@ -30,7 +30,7 @@ export default function Navbar() {
           href="#hero"
           className="inline-flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/50 rounded"
         >
-          <img src={veilixlogo} alt="Veilix" className="h-8 w-auto" />
+          <img src={veilixlogo} alt="Veilix" className="h-10 w-auto" />
         </a>
 
         {/* Center: Nav links */}
@@ -42,7 +42,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-xs font-semibold text-white/70 hover:text-white transition-colors"
+              className="text-l font-semibold text-white/70 hover:text-white transition-colors"
             >
               {l.label}
             </a>
@@ -53,7 +53,7 @@ export default function Navbar() {
         <div className="ml-auto">
           <a
             href="mailto:parvez.rumi@veilix.ai"
-            className="rounded-full border border-[rgb(183,183,183)] px-4 py-2 text-xs font-light
+            className="rounded-full border border-[rgb(183,183,183)] px-4 py-1.5 text-s font-light
                        text-white/90 hover:bg-white hover:text-black transition-colors"
           >
             Contact

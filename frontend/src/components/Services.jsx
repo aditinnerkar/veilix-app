@@ -31,7 +31,7 @@ export default function Why() {
         <div className="flex justify-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-3.5 py-1.5 backdrop-blur-sm">
             <img src={Star} alt="star" className="h-3 w-3 opacity-60" />
-            <span className="text-[12.5px] leading-none text-white/70">
+            <span className="text-[16px] leading-none text-white/70">
               Our Services
             </span>
             <img src={Star} alt="star" className="h-3 w-3 opacity-60" />
@@ -39,7 +39,7 @@ export default function Why() {
         </div>
 
         {/* Heading */}
-        <h2 className="text-center text-[32px] leading-tight font-semibold tracking-[-0.01em] mt-4">
+        <h2 className="text-center text-[34px] leading-tight font-semibold tracking-[-0.01em] mt-4">
           Smart AI Solutions for Modern Engineering Challenges
         </h2>
 
@@ -50,7 +50,7 @@ export default function Why() {
               key={item.title}
               className="
                 group relative rounded-[15px] border border-white/10
-                bg-white/[0.02] p-7 flex flex-row items-center gap-12
+                bg-white/[0.02] p-6.5 flex flex-row items-center gap-12
                 transition-all duration-300 transform-gpu
                 hover:-translate-y-1.5 hover:shadow-[0_10px_40px_rgba(255,255,255,0.06)]
                 hover:border-white/20
@@ -78,7 +78,7 @@ export default function Why() {
 
               {/* Title + body (right) */}
               <div>
-                <h3 className="text-[24px] font-semibold leading-snug">{item.title}</h3>
+                <h3 className="text-[26px] font-semibold leading-snug">{item.title}</h3>
                 <p className="mt-2.5 text-[16px] leading-relaxed text-white/60 max-w-[300px]">
                   {item.body}
                 </p>
