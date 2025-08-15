@@ -52,7 +52,7 @@ export default function Navbar() {
         {/* Right: Contact pill */}
         <div className="ml-auto">
           <a
-            href="#contact"
+            href="mailto:parvez.rumi@veilix.ai"
             className="rounded-full border border-[rgb(183,183,183)] px-4 py-2 text-xs font-light
                        text-white/90 hover:bg-white hover:text-black transition-colors"
           >
