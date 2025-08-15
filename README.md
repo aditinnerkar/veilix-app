@@ -7,7 +7,7 @@ Veilix is a forward-thinking startup that merges **Generative AI** and **advance
 ---
 ```bash
 
-# Execution (placeholder)
+# Execution
 cd frontend
 npm install
 npm run dev
