@@ -11,3 +11,8 @@ Veilix is a forward-thinking startup that merges **Generative AI** and **advance
 cd frontend
 npm install
 npm run dev
+
+# TODO:
+1. Add collaborators and partners (currently dummy code exists)
+2. Add a page, additional info about solutions
+3. Create a contact form
