@@ -16,6 +16,7 @@ export default function Navbar() {
     { href: "#about", label: "About" },
     { href: "#services", label: "Services" },
     { href: "#process", label: "Process" },
+    { href: "#chat", label: "AI Chat" },
   ];
 
   return (
