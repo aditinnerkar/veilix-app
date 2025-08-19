@@ -210,10 +210,6 @@ async def generate_openai_response(session: Dict[str, Any], message: str) -> str
             graph_str = str(graph_dict)
             print(f"Graph data size: {len(graph_str)} characters")
             
-            # Truncate if too long to avoid token limits
-            if len(graph_str) > 50000:  # Reasonable limit for API calls
-                graph_str = graph_str[:50000] + "... [truncated for brevity]"
-                print("⚠️  Graph data truncated due to size limitations")
                 
             graph_info = f"Complete P&ID Graph Data:\n{graph_str}"
             print(f"✅ Graph loaded successfully! ({graph.number_of_nodes()} nodes, {graph.number_of_edges()} edges)")
@@ -264,10 +260,8 @@ Answer in English and be precise. Use the graph data to provide specific insight
         
         # Call OpenAI with settings similar to AI_utilities copy.py
         response = openai_client.chat.completions.create(
-            model="gpt-4o",  # Use gpt-4o like in original
+            model="gpt-5",  # Use gpt-4o like in original
             messages=messages,
-            max_tokens=1500,
-            temperature=0.7
         )
         
         ai_result = response.choices[0].message.content
