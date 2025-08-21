@@ -15,6 +15,7 @@ export default function Footer() {
               <li><a href="#about" className="text-white/70 hover:text-white">About</a></li>
               <li><a href="#services" className="text-white/70 hover:text-white">Services</a></li>
               <li><a href="#process" className="text-white/70 hover:text-white">Process</a></li>
+              <li><a href="#chat" className="text-white/70 hover:text-white">AI Chat</a></li>
             </ul>
           </div>
 
